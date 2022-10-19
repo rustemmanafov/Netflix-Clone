@@ -18,6 +18,7 @@
 		466EF3E628FEE87800A7BF8F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466EF3E528FEE87800A7BF8F /* SearchViewController.swift */; };
 		466EF3E828FEE89F00A7BF8F /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466EF3E728FEE89F00A7BF8F /* DownloadViewController.swift */; };
 		466EF3F029007DD400A7BF8F /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466EF3EF29007DD400A7BF8F /* CollectionViewTableViewCell.swift */; };
+		466EF3F2290086B900A7BF8F /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466EF3F1290086B900A7BF8F /* HeroHeaderUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		466EF3E528FEE87800A7BF8F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		466EF3E728FEE89F00A7BF8F /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		466EF3EF29007DD400A7BF8F /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		466EF3F1290086B900A7BF8F /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				466EF3EF29007DD400A7BF8F /* CollectionViewTableViewCell.swift */,
+				466EF3F1290086B900A7BF8F /* HeroHeaderUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				466EF3E228FEE84E00A7BF8F /* HomeViewController.swift in Sources */,
+				466EF3F2290086B900A7BF8F /* HeroHeaderUIView.swift in Sources */,
 				466EF3E628FEE87800A7BF8F /* SearchViewController.swift in Sources */,
 				466EF3D428FEE4C600A7BF8F /* Netflix_Clone.xcdatamodeld in Sources */,
 				466EF3CE28FEE4C600A7BF8F /* MainTabBarViewController.swift in Sources */,
