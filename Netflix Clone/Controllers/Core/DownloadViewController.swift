@@ -36,7 +36,6 @@ class DownloadViewController: UIViewController {
     
     private func fetchLocalStorageForDownload() {
 
-        
         DataPersistenceManager.shared.fetchingTitlesFromDataBase { [weak self] result in
             switch result {
             case .success(let titles):
@@ -90,7 +89,7 @@ extension DownloadViewController: UITableViewDelegate, UITableViewDataSource {
             DataPersistenceManager.shared.deleteTitleWith(model: titles[indexPath.row]) { [weak self] result in
                 switch result {
                 case .success():
-                    print("Deleted fromt the database")
+                    print("Deleted from the database")
                 case .failure(let error):
                     print(error.localizedDescription)
                 }

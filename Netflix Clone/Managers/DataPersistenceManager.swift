@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 import CoreData
 
-
 class DataPersistenceManager {
     
     enum DatabasError: Error {
@@ -20,13 +19,11 @@ class DataPersistenceManager {
     
     static let shared = DataPersistenceManager()
     
-    
     func downloadTitleWith(model: Title, completion: @escaping (Result<Void, Error>) -> Void) {
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
-        
         
         let context = appDelegate.persistentContainer.viewContext
         
@@ -42,7 +39,6 @@ class DataPersistenceManager {
         item.vote_count = Int64(model.vote_count)
         item.vote_average = model.vote_average
         
-        
         do {
             try context.save()
             completion(.success(()))
@@ -50,7 +46,6 @@ class DataPersistenceManager {
             completion(.failure(DatabasError.failedToSaveData))
         }
     }
-    
     
     func fetchingTitlesFromDataBase(completion: @escaping (Result<[TitleItem], Error>) -> Void) {
         

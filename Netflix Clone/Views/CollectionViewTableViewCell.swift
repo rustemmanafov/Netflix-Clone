@@ -13,7 +13,7 @@ protocol CollectionViewTableViewCellDelegate: AnyObject {
 }
 
 class CollectionViewTableViewCell: UITableViewCell {
-
+    
     static let identifier = "CollectionViewTableViewCell"
     
     weak var delegate: CollectionViewTableViewCellDelegate?
@@ -68,11 +68,10 @@ class CollectionViewTableViewCell: UITableViewCell {
     }
 }
 
-
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
+        
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCollectionViewCell.identifier, for: indexPath) as? TitleCollectionViewCell else {
             return UICollectionViewCell()
         }
@@ -115,7 +114,6 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
             case .failure(let error):
                 print(error.localizedDescription)
             }
-            
         }
     }
     
@@ -123,7 +121,7 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
         
         let config = UIContextMenuConfiguration(
             identifier: nil,
-            previewProvider: nil) { [weak self] _ in
+            previewProvider: nil) {[weak self] _ in
                 let downloadAction = UIAction(title: "Download", subtitle: nil, image: nil, identifier: nil, discoverabilityTitle: nil, state: .off) { _ in
                     self?.downloadTitleAt(indexPath: indexPath)
                 }
@@ -132,9 +130,4 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
         
         return config
     }
-    
-    
-
-    
-    
 }
