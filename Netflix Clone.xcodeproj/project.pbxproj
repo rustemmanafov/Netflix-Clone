@@ -31,6 +31,7 @@
 		46C9DF512907251C001453AD /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C9DF502907251C001453AD /* SearchResultsViewController.swift */; };
 		46C9DF5529073F89001453AD /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C9DF5429073F89001453AD /* TitlePreviewViewController.swift */; };
 		46C9DF57290744D1001453AD /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C9DF56290744D1001453AD /* TitlePreviewViewModel.swift */; };
+		46CE77102909E29900006A67 /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE770F2909E29900006A67 /* DataPersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		46C9DF502907251C001453AD /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		46C9DF5429073F89001453AD /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
 		46C9DF56290744D1001453AD /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
+		46CE770F2909E29900006A67 /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				466EF3FB2901FDC900A7BF8F /* APICaller.swift */,
+				46CE770F2909E29900006A67 /* DataPersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				468CACC02902ECB000F77CED /* Titles.swift in Sources */,
 				466EF3E228FEE84E00A7BF8F /* HomeViewController.swift in Sources */,
 				466EF3F2290086B900A7BF8F /* HeroHeaderUIView.swift in Sources */,
+				46CE77102909E29900006A67 /* DataPersistenceManager.swift in Sources */,
 				466EF3E628FEE87800A7BF8F /* SearchViewController.swift in Sources */,
 				466EF3FC2901FDC900A7BF8F /* APICaller.swift in Sources */,
 				466EF3D428FEE4C600A7BF8F /* Netflix_Clone.xcdatamodeld in Sources */,
